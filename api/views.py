@@ -3,6 +3,7 @@ from .models import User
 
 from textblob import TextBlob
 from nrclex import NRCLex
+nltk.data.path.append(os.path.join(settings.BASE_DIR, "nltk_data"))
 
 
 class UserFormView(TemplateView):
