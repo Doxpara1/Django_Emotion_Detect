@@ -4,6 +4,11 @@ from .models import User
 from textblob import TextBlob
 from nrclex import NRCLex
 
+import nltk
+
+nltk.download("punkt")
+nltk.download("stopwords")
+
 class UserFormView(TemplateView):
     template_name = 'index.html'
 
